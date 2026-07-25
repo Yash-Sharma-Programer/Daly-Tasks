@@ -1,0 +1,187 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#F8FAFC;
+    color:#1E293B;
+    line-height:1.6;
+}
+
+/* Navbar */
+
+header{
+    width:100%;
+    background:#ffffff;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 40px;
+}
+
+nav h2{
+    color:#2563EB;
+    font-size:28px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#1E293B;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#2563EB;
+}
+
+/* Hero */
+
+#hero{
+    max-width:1200px;
+    margin:auto;
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    padding:60px 40px;
+}
+
+#hero div{
+    flex:1;
+}
+
+#hero p:first-child{
+    color:#2563EB;
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+#hero h1{
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+#hero h2{
+    color:#475569;
+    margin-bottom:20px;
+    font-weight:500;
+}
+
+#hero p{
+    margin-bottom:30px;
+}
+
+#hero a{
+    display:inline-block;
+    text-decoration:none;
+    background:#2563EB;
+    color:white;
+    padding:14px 30px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+#hero a:hover{
+    background:#1D4ED8;
+}
+
+#hero img{
+    width:350px;
+    border-radius:20px;
+    display:block;
+    margin:auto;
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+
+/* About */
+
+#about{
+    max-width:1200px;
+    margin:auto;
+    padding:80px 40px;
+}
+
+#about h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:30px;
+    color:#2563EB;
+}
+
+#about p{
+    max-width:800px;
+    margin:20px auto;
+    text-align:center;
+    color:#475569;
+    font-size:18px;
+}
+
+/* Footer */
+
+footer{
+    background:#0F172A;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    nav ul{
+        gap:20px;
+    }
+
+    #hero{
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+
+    #hero h1{
+        font-size:40px;
+    }
+
+    #hero img{
+        width:250px;
+    }
+
+    #about h2{
+        font-size:32px;
+    }
+
+}
